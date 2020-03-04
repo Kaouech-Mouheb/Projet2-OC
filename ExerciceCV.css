@@ -1,0 +1,623 @@
+@font-face {
+	
+	font-family:'SmallTypeWritingMedium';
+	src: url('Police/SmallTypeWritingMedium.ttf');
+
+	}
+@font-face
+{
+	font-family:'Roboto-Thin';
+	src: url('Police/Roboto-Thin.ttf');
+}	
+body
+{
+	font-family: "Arial", sans-serif;
+	font-size:10pt;
+	
+	
+}
+main
+{
+	display:flex;
+}
+
+    /*'fiche de style de la page coté gauche'*/
+
+aside
+{
+	width:300px;
+	background:#feca07 ;
+	margin-right:2,9%; 
+	
+}
+/*personalisation de photo profile*/
+
+p.photoDeProfil
+{
+	margin:40px;
+	
+}
+img.photoDeProfil1
+{
+	width:180px;
+	height: 180px;
+	border:solid 2px #daaf12;
+	border-radius:150px; 	
+
+}
+/*les titre, contact, a propos de moi, Loisir*/
+h2
+{
+	text-align: center;
+	background: #404040;
+	color:#feca07;
+	font-size:18pt;
+	padding: 14px;
+			
+
+}
+address
+{
+	margin-left: 46px;
+	font-style: normal;
+	font-size:14PX;
+	margin-top: 38px;
+	font-weight:bold;
+	
+
+}
+a 
+{
+	text-decoration: none;
+	color:black;
+}
+p.AproposDeMoi
+{
+
+	font-family:"SmallTypeWritingMedium",Arial, sans-serif ;
+	font-size:12pt;
+	margin:46px;
+	margin-top: 38px;
+	height: 551px;
+
+}
+
+img.photoLoisir
+{
+	width: 168px;
+	padding-right: 64px;
+	padding-left: 64px;
+	
+	 
+}
+
+  /*'fiche de style de la page coté droite'*/
+
+section
+{
+	
+	margin-left: 64px;
+	
+}
+/*______________titre de la page___________*/
+h1
+{
+	margin-top: 60px;
+	font-size: 44pt;
+	font-family:"Roboto-Thin", Arial, sans-serif;
+	
+}                                             
+h1 span.jessicaStyle
+{
+	color:#feca07;
+}
+p.developpeur
+{
+	font-size:20pt;
+	margin-top:-35px;
+	
+}
+p span.souligner
+{
+	text-decoration: underline #feca07;
+
+}
+/*Formation, expérience professionnel, Recommondation*/
+h3
+{
+	font-size:20pt;
+	
+}
+
+h3.titreFormation
+{
+	
+margin-top:80px;
+}
+
+h3 img.logoFormation
+{
+	margin-right: 36px;
+	width:44px;
+	height:44px;
+
+}
+
+h4
+{
+	font-size:15pt;
+	margin-bottom: -20px;
+}
+
+h5
+{
+	font-family: "Arial", sans-serif;
+	font-size:14pt;
+	font-weight: normal;
+	margin-bottom: -5px;
+	
+}
+
+img.treuil
+{
+	width: 695px;
+	height: 3px
+ 
+}
+
+.souligne
+{
+	margin-top: -30px;
+}
+
+/*____________Categorie Formation et expérience professionnel______*/
+
+.categorie
+{
+
+	display: flex;
+
+	margin-top: 10px;
+}
+
+.blocExperience
+{
+	margin-top: 40px;
+}
+
+.DateFormation
+{
+	width:250px;
+	
+}
+
+
+.pointPosition
+{
+	position: absolute;
+	margin-top: 4px;
+	font-weight: bold;
+}
+
+.point1
+{
+	margin-right: 5px;
+	margin-top: 30px
+	 
+}
+
+.point2
+{
+	margin-right: 5px;
+	margin-top: 120px
+	
+}
+
+.point3
+{
+	margin-right: 5px;
+	margin-top: 25px;
+	margin-bottom: 140px;
+	 
+}
+
+.point4
+{
+	
+	margin-right: 50px;
+	margin-bottom: 130px;	 
+}
+
+.paris
+{
+	margin-left:22px;
+}
+.paris1
+{
+	margin-left: 22px;
+	margin-top: -50px;
+}
+
+
+div.formation
+{
+	margin-left:40px;
+	width:350px;
+	
+}
+
+/*________Catégorie Recommandation_________*/
+
+div.recommandation
+{
+	display: flex;
+	margin-left: 50px;
+}
+
+.recommandationBlog
+{
+	width:300px;
+}
+
+/**__________________________________/*For Apple Ipad Air__________________________________*/
+
+@media screen and (max-width:1024px)
+{
+
+div.formation
+{
+	margin-left:20px;
+	width:300px;
+}
+.point1
+{
+	margin-right: 5px;
+	margin-top: 30px
+	 
+}
+
+.point2
+{
+	margin-right: 5px;
+	margin-top: 160px
+	
+}
+
+.point3
+{
+	margin-right: 5px;
+	margin-top: 25px;
+	margin-bottom: 180px;
+	 
+}
+
+.point4
+{
+	
+	margin-right: 50px;
+	margin-bottom: 140px;
+	
+}
+/*_______________________/*For Google Nexus 7 __________________*/
+
+@media screen and (max-width:960px)
+{
+
+
+body
+{
+
+	font-size:9pt;
+}
+		
+
+    /*'fiche de style de la page coté gauche'*/
+
+aside
+{
+	width:200px;
+	background:#feca07 ;
+
+	
+}
+/*personalisation de photo profile*/
+
+p.photoDeProfil
+{
+	margin:25px;
+	
+}
+img.photoDeProfil1
+{
+	width:140px;
+	height: 140px;
+	 	
+}
+/*les titre, contact, a propos de moi, Loisir*/
+section
+{
+	
+	margin-left: 34px;
+	
+}
+h2
+{
+	font-size:14pt;
+	padding: 10px;
+			
+
+}
+address
+{
+	font-size:10PX;
+	margin-top: 30px;
+	
+}
+
+p.AproposDeMoi
+{
+	margin:36px;
+	margin-top: 20px;
+	font-size: 9pt;
+	height: 551px;
+
+}
+
+img.photoLoisir
+{
+	width: 168px;
+	padding-right: 16px;
+	padding-left: 16px;
+		 
+}
+
+
+h1
+{
+	margin-top: 30px;
+	font-size: 34pt;
+	
+}                                             
+
+p.developpeur
+{
+	font-size:16pt;
+	margin-top:-30px;
+	
+}
+h3
+{
+	font-size:16pt;
+	
+}
+
+
+
+h3 img.logoFormation
+{
+	margin-right: 28px;
+	width: 32px;
+	height: 32px;
+
+}
+h3.titreFormation
+{
+	
+margin-top:30px;
+}
+
+
+img.treuil
+{
+	width: 450px;
+	height: 3px
+ 
+}
+
+
+div.formation
+{
+	margin-left:10px;
+	width:250px;
+	
+}
+.DateFormation
+{
+	width:150px;
+	
+	
+}
+#formation1
+{
+	margin-top:100px;
+}
+.point1
+{
+	margin-right: 5px;
+	margin-top: 30px
+	 
+}
+
+.point2
+{
+	margin-right: 5px;
+	margin-top: 120px
+	
+}
+
+.point3
+{
+	margin-right: 5px;
+	margin-top: 25px;
+	margin-bottom: 180px;
+	 
+}
+
+.point4
+{
+	
+	margin-right: 50px;
+	margin-bottom: 140px;
+	
+	 
+}
+
+div.recommandation
+{
+	display: flex;
+	margin-left: 20px;
+
+}
+
+.recommandationBlog
+{
+	width:250px;
+}
+
+}
+/*__________________________/*For Apple ipPhone 6_____________*/
+@media screen and (max-width:700px)
+{
+
+
+body
+{
+	font-family: "Arial", sans-serif;
+	font-size:10pt;
+	
+	
+}
+main
+{
+	display:flex;
+}
+
+    /*'fiche de style de la page coté gauche'*/
+
+aside
+{
+	width:300px;
+	background:#feca07 ;
+	margin-right:2,9%; 
+	
+}
+p.photoDeProfil
+{
+	margin:25px;
+	
+}
+img.photoDeProfil1
+{
+	width:240px;
+	height: 240px;
+	 	
+}
+h1
+{
+	margin-top: 230px;
+	font-size: 16pt;
+	
+}                                             
+
+p.developpeur
+{
+	font-size:12pt;
+	margin-top:10px;
+	
+}
+h3
+{
+	font-size:13pt;
+	
+}
+
+
+
+h3 img.logoFormation
+{
+	margin-right: 28px;
+	width: 17px;
+	height: 17px;
+
+}
+h3.titreFormation
+{
+	
+margin-top:20px;
+}
+.categorie
+{
+	display: flex;
+	margin-left: 20px;
+}
+
+img.treuil
+{
+	width: 300px;
+	height: 3px
+ 
+}
+
+
+div.formation
+{
+	margin-left:10px;
+	width:200px;
+	
+}
+.DateFormation
+{
+	width:100px;
+	
+	
+}
+#formation1
+{
+	margin-top:100px;
+}
+.point1
+{
+	margin-right: 5px;
+	margin-top: 30px
+	 
+}
+
+.point2
+{
+	margin-right: 5px;
+	margin-top: 120px
+	
+}
+
+.point3
+{
+	margin-right: 5px;
+	margin-top: 25px;
+	margin-bottom: 180px;
+	 
+}
+
+.point4
+{
+	
+	margin-right: 50px;
+	margin-bottom: 140px;
+	
+	 
+}
+
+div.recommandation
+{
+	display: flex;
+	margin-left: 10px;
+
+}
+
+.recommandationBlog
+{
+	width:250px;
+}
+
+}
+
+}
