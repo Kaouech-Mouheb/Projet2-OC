@@ -253,7 +253,7 @@ div.point{      /*items de type container contient lui aussi deux items'logos de
 
 /*___________/*Application des medias queries pour un écran de ipad______________________________________________*/
 
-@media screen and (min-width: 400px) and (max-width: 800px){
+@media screen and (max-width: 800px){
 
 body{
 	background-image: url('Image/arrierePlan.jpg');
@@ -332,7 +332,7 @@ div p#aPropos{
 	display: none;
 }
 
-.container5{     /*Section titre KAOUECH MOUHEB*/
+.container5{     /*Section titre KAOUECH MOUHEB*/ 
 	margin-left:5px;
 	order:1;	
 	background: none;
@@ -390,7 +390,114 @@ div p#aPropos{
 	display: none;
 }
 
+/*___________/*Application des medias queries pour un écran de téléphone______________________________________________*/
 
+@media screen and (max-width: 690px){
+
+
+main{
+	
+	flex-direction: column;
+	width: 100%;
+}
+h1{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 1px;
+	font-family:'LEMONMILK-Light', Arial, sans-serif;
+	font-weight: bold;
+}
+hr{
+	margin-top: -25px;
+}
+.treuil{
+	margin-top: -20px;
+}
+
+/*Personalisation de la section photo de profil*/
+.container1{
+	background:;
+	order:1;
+	width: 100%;
+	margin-left: 22%;
+	
+}
+img.photoProfil
+{
+	border:4px solid #daaf12;
+	border-radius:200px;
+	width:56%;
+	height:56%;
+	margin-left:50px;
+	margin-top: 110px;
+}
+.container2{     /*Mes information de contact*/
+	background: none;
+	margin-left:10px;
+	order:3;
+	width: 100%;
+}
+address {
+	font-style: normal;
+	margin-top:-20px;
+	margin-left: 10px;
+	color:#feca07;
+}
+/*Personalisation de la section a propos de moi*/
+.container3{      
+	order:4;
+	background:none;
+	width: 100%;
+	margin-bottom: -60px;
+	margin-top: -20px;
+}
+div p#aPropos{
+	font-family:'Comfortaa-Regular', Arial, sans-serif;
+	margin-top:-10px;
+	margin-left: 10px;
+	box-shadow: 2px 4px 5px ;
+	padding: 5px;
+	width:100%;
+}
+.container5{     /*Section titre KAOUECH MOUHEB*/
+	order:2;	
+	background: none;
+	min-width: 200px;
+	width: 120%;
+	margin-top: -20px;
+}
+.developpeur{
+	font-size: 20px;
+	text-align: center;
+	padding-top: 1px;
+}
+/*Personalisation de la section formation*/
+.container6{        
+	width: 100%;
+	margin-left: 0px;
+}
+/*Personalisation de la section expérience professionnel*/
+.container7{
+	order:6;
+	width:100%;
+	margin-left: 0px;
+	margin-top:20px; 
+	}
+/*Personnalisation de la section recommandation*/
+ .items3{
+ 	justify-content:flex-start;
+ 	margin-left: 10px;
+ }
+/*Personnalisation de la section contact'adresse, tel..'*/
+.container2 div:first-of-type p{
+	margin-bottom: -2px;
+}
+.container2 div:nth-of-type(2) p{
+	margin-bottom: -2px;
+}
+.container2 div:nth-of-type(3) p{
+	margin-bottom: -2px;
+}
 
 
 
