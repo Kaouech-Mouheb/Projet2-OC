@@ -6,618 +6,392 @@
 	}
 @font-face
 {
-	font-family:'Roboto-Thin';
-	src: url('Police/Roboto-Thin.ttf');
-}	
-body
-{
-	font-family: "Arial", sans-serif;
-	font-size:10pt;
-	
-	
+	font-family:'Roboto-Light';
+	src: url('Police/Roboto-Light.ttf');
 }
-main
+@font-face
 {
-	display:flex;
+	font-family:'Louis George Cafe';
+	src: url('Police/Louis George Cafe.ttf');
+}
+@font-face
+{
+	font-family:'Comfortaa-Regular';
+	src: url('Police/Comfortaa-Regular.ttf');
+}
+@font-face
+{
+	font-family:'LEMONMILK-Light';
+	src: url('Police/LEMONMILK-Light.ttf');
 }
 
-    /*'fiche de style de la page coté gauche'*/
+/*Personalisation des polices de la page*/
 
-aside
-{
-	width:300px;
-	background:#feca07 ;
-	margin-right:2,9%; 
-	
+h1{ /*Titre Principal de la page'KAOUECH MOUHEB'*/
+	font-family:'Roboto-Light', Arial, sans-serif;
+	font-size:56px;
+	font-weight:normal;	
 }
-/*personalisation de photo profile*/
 
-p.photoDeProfil
-{
-	margin:40px;
-	
-}
-img.photoDeProfil1
-{
-	width:180px;
-	height: 180px;
-	border:solid 2px #daaf12;
-	border-radius:150px; 	
-
-}
-/*les titre, contact, a propos de moi, Loisir*/
-h2
-{
+h2{ /*Personalisation des titres de niveau h2, contact, a propos de moi, loisir*/
 	text-align: center;
 	background: #404040;
 	color:#feca07;
-	font-size:18pt;
-	padding: 14px;
-			
+	font-size: 32px;
+	padding:4px;
+}
+h3{/*Personalisation des titres de niveau h3, formation, expérience professionnel, recom..*/
+	font-size:1.5em;
+}
+h4{/*Personnalisation des titres de niveau h4, les noms des écoles et des entreprises */
+	font-size: 1.3em;
+	margin-bottom: -12px;
+}
+h5{/*Personalisation des tires de niveau h5, les noms des formations et des postes de travail*/
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-bottom: -9px;
+}
+
+hr{ /*Personalisation de treuil qu'en trouve sous les titres, form.., exp..reco.*/
+	border: solid 1px;
+	border-color:#feca07;
+	margin-top: -12px;
+}
+body{
+	font-family:'Louis George Cafe', Arial, sans-serif;
 
 }
-address
+
+/*Mise forme de la page, application de flex box et dévision de la page en plusieurs container*/
+main{
+	display:flex;
+	flex-wrap: wrap;
+}
+/*Personalisation des sections Photo de profil, contact, a propos de moi et loisir*/
+
+/*Personlaisation de la section Photo de profil 'container1'*/
+.container1{ 
+	order:0;
+	width: 32%;
+	min-width: 200px;
+	background:#feca07;	
+}
+img.photoProfil
 {
-	margin-left: 46px;
+	border:4px solid #daaf12;
+	border-radius:200px;
+	margin-top:11.23%;
+	margin-bottom:8%;
+	margin-left: 21%;
+	margin-right: 21%;
+	width:56%;
+	height:56%;
+}
+/*Personalisation de la section contact*/
+.container2{
+	order:3;
+	width: 32%;
+	min-width: 200px;
+	background:#feca07;
+}
+address {
 	font-style: normal;
-	font-size:14PX;
-	margin-top: 38px;
-	font-weight:bold;
-	
-
+	margin: 51px;
 }
-a 
-{
+a {
 	text-decoration: none;
 	color:black;
 }
-p.AproposDeMoi
-{
-
-	font-family:"SmallTypeWritingMedium",Arial, sans-serif ;
-	font-size:12pt;
-	margin:46px;
-	margin-top: 38px;
-	height: 551px;
+/*Personalisation de la section a propos de moi*/
+.container3{
+	order:5;
+	width: 32%;
+	min-width: 200px;
+	background:#feca07;
 
 }
+div p#aPropos{
+margin:51px;
+font-family:SmallTypeWritingMedium, Arial, sans-serif;	
+}
 
-img.photoLoisir
-{
-	width: 168px;
-	padding-right: 64px;
-	padding-left: 64px;
-	
+/*Personalisation de la section loisirs*/
+.container4{
+	order:7;
+	width: 32%;
+	min-width: 200px;
+	background:#feca07;
+}
+img#loisir{
+	margin-left:10%;
+	margin-right:10%;
+	width: 70%;
 	 
 }
+/*Personalisation des sections, kaouech, formation, expérience professionnel et recommandation*/
 
-  /*'fiche de style de la page coté droite'*/
-
-section
-{
-	
-	margin-left: 64px;
-	
+/*Personalisation de la section 'KAOUECH MOUHEB' '*/
+.container5{
+	order:2;
+	width:63% ;
+	min-width: 443px;
+	margin-left:5%;
+	margin-top: 7%;	
 }
-/*______________titre de la page___________*/
-h1
-{
-	margin-top: 60px;
-	font-size: 44pt;
-	font-family:"Roboto-Thin", Arial, sans-serif;
-	
-}                                             
-h1 span.jessicaStyle
-{
+span#kaouech{
 	color:#feca07;
+	font-weight: bold;
 }
-p.developpeur
-{
-	font-size:20pt;
-	margin-top:-35px;
-	
-}
-p span.souligner
-{
+span#deve{
 	text-decoration: underline #feca07;
 
 }
-/*Formation, expérience professionnel, Recommondation*/
-h3
-{
-	font-size:20pt;
+.developpeur{
+	font-size:28px;
+	margin-top:-20px; 
+}
+
+/*Personalisation de la section formation*/
+.container6{
+	order:4;
+	width: 63%;
+    min-width: 443px;
+	margin-left:5%;
+}
+.items1{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	
 }
+.items1 div:first-of-type{
+	margin-top:;
+	width:30%;
+	}
+.items1 div:nth-of-type(2){
+	order:3;
+	margin-top:;
+	width:30%;
+}
+.items1 div:nth-of-type(3){
+	width:60%;
+	}
+.items1 div:last-of-type{
+	width:60%;
+	order:4;
+}
+/*Personalisation de la section expérience professionnel*/
+.container7{
+	order:6;
+	width: 63%;
+    min-width: 443px;
+	margin-left:5%;
+}
+.items2{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.items2 div:first-of-type{
+	width:30%;
+}
+.items2 div:nth-of-type(2){
+	width:60%;
+}
+.items2 div:nth-of-type(3){
+	width:30%;
+}
+.items2 div:nth-of-type(4){
+	width:60%;
+}
+.items2 div:nth-of-type(5){
+	width:30%;
+}
+.items2 div:last-of-type{
+	width:60%;
+}
 
-h3.titreFormation
-{
+/*Personalisation de la section recommandation*/
+.container8{
+	order:8;
+	width: 62%;
+    min-width: 443px;
+	margin-left:5%;
+}
+.items3{
+	display:flex;
+	flex-wrap: wrap;
 	
-margin-top:80px;
-}
-
-h3 img.logoFormation
-{
-	margin-right: 36px;
-	width:44px;
-	height:44px;
-
-}
-
-h4
-{
-	font-size:15pt;
-	margin-bottom: -20px;
-}
-
-h5
-{
-	font-family: "Arial", sans-serif;
-	font-size:14pt;
-	font-weight: normal;
-	margin-bottom: -5px;
-	
-}
-
-img.treuil
-{
-	width: 695px;
-	height: 3px
- 
-}
-
-.souligne
-{
-	margin-top: -30px;
-}
-
-/*____________Categorie Formation et expérience professionnel______*/
-
-.categorie
-{
-
-	display: flex;
-
-	margin-top: 10px;
-}
-
-.blocExperience
-{
-	margin-top: 40px;
-}
-
-.DateFormation
-{
+	}
+.items3 div:first-of-type{
 	width:250px;
-	
+	min-width: 100px;
+	margin-right: 10%;
+}
+.items3 div:last-of-type{
+	width:250px;
+	min-width: 100px;
+}
+/*Personalisation de la section date, ville, poste actuel et les logos */
+
+div.point{      /*items de type container contient lui aussi deux items'logos de point et date'*/
+	display: flex;	
+}
+.point{ /* ajustement de container en hauteur*/
+	padding-top:16px;
+}
+.image{ /*la class image regroupe les logos de point */
+	padding-right:20px;
 }
 
+.logos {  /*les logos des titres, fotmation, exp..., recomma*/
 
-.pointPosition
-{
-	position: absolute;
-	margin-top: 4px;
+	margin-right: 30px;
+	margin-bottom:-10px; 
+ }
+
+/*___________/*Application des medias queries pour un écran de ipad______________________________________________*/
+
+@media screen and (min-width: 400px) and (max-width: 800px){
+
+body{
+	background-image: url('Image/arrierePlan.jpg');
+	background-repeat: no-repeat;
+}
+main{
+	min-height: 1024px;
+}
+h1{
+	font-size: 31px;
+	margin-left: 20px;
+	margin-top: 1px;
+	font-family:'LEMONMILK-Light', Arial, sans-serif;
 	font-weight: bold;
 }
-
-.point1
-{
-	margin-right: 5px;
-	margin-top: 30px
-	 
+ h3{
+ 	font-size: 30px;
+ 	color:#feca07;
+ 	text-align: center;
+ 	background: #302e2e;
+ 	padding: 5px;
+ }
+hr{
+	border:4px solid #feca07 ;
+	width: 100%;
+}
+.treuil{
+	margin-top: -10px;
 }
 
-.point2
-{
-	margin-right: 5px;
-	margin-top: 120px
-	
+/*Personalisation de la section photo de profil*/
+.container1{
+	background:none;
+	order:3;
+	flex-grow: 1;
+	margin-top: -100px;
+	margin-left:130px;
 }
-
-.point3
+img.photoProfil
 {
-	margin-right: 5px;
-	margin-top: 25px;
-	margin-bottom: 140px;
-	 
+	border:4px solid #daaf12;
+	border-radius:200px;
+	width:56%;
+	height:56%;
 }
-
-.point4
-{
-	
-	margin-right: 50px;
-	margin-bottom: 130px;	 
-}
-
-.paris
-{
-	margin-left:22px;
-}
-.paris1
-{
-	margin-left: 22px;
-	margin-top: -50px;
-}
-
-
-div.formation
-{
-	margin-left:40px;
-	width:350px;
-	
-}
-
-/*________Catégorie Recommandation_________*/
-
-div.recommandation
-{
-	display: flex;
-	margin-left: 50px;
-}
-
-.recommandationBlog
-{
-	width:300px;
-}
-
-/**__________________________________/*For Apple Ipad Air__________________________________*/
-
-@media screen and (max-width:1024px)
-{
-
-div.formation
-{
-	margin-left:20px;
-	width:300px;
-}
-.point1
-{
-	margin-right: 5px;
-	margin-top: 30px
-	 
-}
-
-.point2
-{
-	margin-right: 5px;
-	margin-top: 160px
-	
-}
-
-.point3
-{
-	margin-right: 5px;
-	margin-top: 25px;
-	margin-bottom: 180px;
-	 
-}
-
-.point4
-{
-	
-	margin-right: 50px;
-	margin-bottom: 140px;
-	
-}
-/*_______________________/*For Google Nexus 7 __________________*/
-
-@media screen and (max-width:960px)
-{
-
-
-body
-{
-
-	font-size:9pt;
-}
-		
-
-    /*'fiche de style de la page coté gauche'*/
-
-aside
-{
-	width:200px;
-	background:#feca07 ;
-
-	
-}
-/*personalisation de photo profile*/
-
-p.photoDeProfil
-{
-	margin:25px;
-	
-}
-img.photoDeProfil1
-{
-	width:140px;
-	height: 140px;
-	 	
-}
-/*les titre, contact, a propos de moi, Loisir*/
-section
-{
-	
-	margin-left: 34px;
-	
-}
-h2
-{
-	font-size:14pt;
-	padding: 10px;
-			
-
-}
-address
-{
-	font-size:10PX;
-	margin-top: 30px;
-	
-}
-
-p.AproposDeMoi
-{
-	margin:36px;
-	margin-top: 20px;
-	font-size: 9pt;
-	height: 551px;
-
-}
-
-img.photoLoisir
-{
-	width: 168px;
-	padding-right: 16px;
-	padding-left: 16px;
-		 
-}
-
-
-h1
-{
-	margin-top: 30px;
-	font-size: 34pt;
-	
-}                                             
-
-p.developpeur
-{
-	font-size:16pt;
-	margin-top:-30px;
-	
-}
-h3
-{
-	font-size:16pt;
-	
-}
-
-
-
-h3 img.logoFormation
-{
-	margin-right: 28px;
-	width: 32px;
-	height: 32px;
-
-}
-h3.titreFormation
-{
-	
-margin-top:30px;
-}
-
-
-img.treuil
-{
-	width: 450px;
-	height: 3px
- 
-}
-
-
-div.formation
-{
+.container2{     /*Mes information de contact*/
+	background: none;
 	margin-left:10px;
-	width:250px;
-	
+	order:2;
 }
-.DateFormation
-{
-	width:150px;
-	
-	
-}
-#formation1
-{
-	margin-top:100px;
-}
-.point1
-{
-	margin-right: 5px;
-	margin-top: 30px
-	 
-}
-
-.point2
-{
-	margin-right: 5px;
-	margin-top: 120px
-	
-}
-
-.point3
-{
-	margin-right: 5px;
-	margin-top: 25px;
-	margin-bottom: 180px;
-	 
-}
-
-.point4
-{
-	
-	margin-right: 50px;
-	margin-bottom: 140px;
-	
-	 
-}
-
-div.recommandation
-{
-	display: flex;
-	margin-left: 20px;
-
-}
-
-.recommandationBlog
-{
-	width:250px;
-}
-
-}
-/*__________________________/*For Apple ipPhone 6_____________*/
-@media screen and (max-width:700px)
-{
-
-
-body
-{
-	font-family: "Arial", sans-serif;
-	font-size:10pt;
-	
-	
-}
-main
-{
-	display:flex;
-}
-
-    /*'fiche de style de la page coté gauche'*/
-
-aside
-{
-	width:300px;
-	background:#feca07 ;
-	margin-right:2,9%; 
-	
-}
-p.photoDeProfil
-{
-	margin:25px;
-	
-}
-img.photoDeProfil1
-{
-	width:240px;
-	height: 240px;
-	 	
-}
-h1
-{
-	margin-top: 230px;
-	font-size: 16pt;
-	
-}                                             
-
-p.developpeur
-{
-	font-size:12pt;
-	margin-top:10px;
-	
-}
-h3
-{
-	font-size:13pt;
-	
-}
-
-
-
-h3 img.logoFormation
-{
-	margin-right: 28px;
-	width: 17px;
-	height: 17px;
-
-}
-h3.titreFormation
-{
-	
-margin-top:20px;
-}
-.categorie
-{
-	display: flex;
-	margin-left: 20px;
-}
-
-img.treuil
-{
-	width: 300px;
-	height: 3px
- 
-}
-
-
-div.formation
-{
-	margin-left:10px;
-	width:200px;
-	
-}
-.DateFormation
-{
-	width:100px;
-	
-	
-}
-#formation1
-{
-	margin-top:100px;
-}
-.point1
-{
-	margin-right: 5px;
-	margin-top: 30px
-	 
-}
-
-.point2
-{
-	margin-right: 5px;
-	margin-top: 120px
-	
-}
-
-.point3
-{
-	margin-right: 5px;
-	margin-top: 25px;
-	margin-bottom: 180px;
-	 
-}
-
-.point4
-{
-	
-	margin-right: 50px;
-	margin-bottom: 140px;
-	
-	 
-}
-
-div.recommandation
-{
-	display: flex;
+address {
+	font-style: normal;
+	margin-top:-20px;
 	margin-left: 10px;
-
+	color:#feca07;
+}
+/*Personalisation de la section a propos de moi*/
+.container3{      
+	order:4;
+	background:none;
+	width: 100%;
+}
+div p#aPropos{
+	font-family:'Comfortaa-Regular', Arial, sans-serif;
+	margin-top:-10px;
+	margin-left: 10px;
+	box-shadow: 2px 4px 5px ;
+	width: auto;
+	padding: 10px;
+}
+/*Personalisation de la section loisirs*/
+.container4{   
+	order:7;
+	width: 200px;
+	background:white;
+	display: none;
 }
 
-.recommandationBlog
-{
-	width:250px;
+.container5{     /*Section titre KAOUECH MOUHEB*/
+	margin-left:5px;
+	order:1;	
+	background: none;
+	min-width: 200px;
+	width: 100%;
+}
+.developpeur{
+	font-size: 20px;
+	margin-left: 20px;
+	padding-top: 15px;
+}
+/*Personalisation de la section formation*/
+.container6{        
+	width: 100%;
+	margin-left: 0px;
+}
+/*Personalisation de la section expérience professionnel*/
+.container7{
+	order:6;
+	width:100%;
+	margin-left: 0px;
+	margin-top:20px; 
+	}
+/*Personalisation de la section recommandation*/
+.container8{
+ width: 100%;
+ order:8;
+ background: none;
+ color:white;
+ background: #302e2e;
+ padding-top: 20px;
+ margin-left: 0px;
+
+ }
+ .items3{
+ 	justify-content: space-around;
+ }
+ /*Les différentes éléments supprimer*/
+.container2 h2{
+	display: none;
+}
+.supprimer{          
+	display: none;
+}
+ .container8 h3 .logos{
+ 	display: none;
+}
+   .container6 h3 .logos{
+ 	display: none;
+}
+  .container7 h3 .logos{
+ 	display: none;
+}
+.container3 h2{
+	display: none;
 }
 
-}
 
-}
+
+
+
+
