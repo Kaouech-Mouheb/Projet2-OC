@@ -498,7 +498,9 @@ div p#aPropos{
 .container2 div:nth-of-type(3) p{
 	margin-bottom: -2px;
 }
-
-
-
-
+@media print{
+	body{
+	background-image: url('Image/arrierePlan.jpg');
+	background-repeat: no-repeat;
+}
+}
