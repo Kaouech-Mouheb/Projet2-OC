@@ -1,0 +1,716 @@
+/* 
+ * 1. Corrigez la hauteur de la ligne dans tous les navigateurs. 
+ * 2. Empêchez les ajustements de la taille de la police après les changements d'orientation dans iOS. 
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections 
+   ========================================== ================================= * / 
+
+/** 
+ * Supprimer la marge dans tous les navigateurs. 
+ */
+
+*{
+  margin: 0;
+ 
+}
+
+/**
+ * Rendre l'élément `main` de manière cohérente dans IE. 
+ */
+
+main {
+  display: block;
+}
+
+/** 
+ * Corrigez la taille et la marge de la police sur les éléments 
+ `h1` dans les contextes` section` et * `article` dans Chrome, Firefox et Safari. 
+ */ 
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/* 
+ * 1. Ajoutez le bon dimensionnement de boîte dans Firefox. 
+ * 2. Affichez le débordement dans Edge et IE. 
+ */ 
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* 
+ * Supprimez l'arrière-plan gris des liens actifs dans IE 10. 
+ */ 
+
+
+a {
+  background-color: transparent;
+}
+
+/** 
+ * Ajoutez la taille de police correcte dans tous les navigateurs. 
+ */ 
+
+small {
+  font-size: 80%;
+}
+
+@font-face {
+	
+	font-family:'SmallTypeWritingMedium';
+	src: url('Police/SmallTypeWritingMedium.ttf');
+
+	}
+@font-face
+{
+	font-family:'Roboto-Light';
+	src: url('Police/Roboto-Light.ttf');
+}
+@font-face
+{
+	font-family:'Louis George Cafe';
+	src: url('Police/Louis George Cafe.ttf');
+}
+@font-face
+{
+	font-family:'Comfortaa-Regular';
+	src: url('Police/Comfortaa-Regular.ttf');
+}
+@font-face
+{
+	font-family:'LEMONMILK-Light';
+	src: url('Police/LEMONMILK-Light.ttf');
+}
+
+img {
+  	border-style: none;
+  	box-sizing: content-box;
+}
+/*Application des médias queries pour un écran small-xs*/
+@media (max-width: 680px){
+
+/*Personalisation de la photo de condidat*/
+.photoProfil {
+	border-radius: 50%;
+	border:solid 1px #feca07;
+	width:40%; /*40% = 150px sur un écran de 375px */
+	margin:10px 30%;/*30% pour avoir une image placé au centre'100% small screen - 40% image =60%/2 pour avoir 30% de marge sur chaque coté'=  */
+}
+
+
+body{
+	background-image: url('Image/arrierePlan.jpg');
+	background-repeat: no-repeat;
+	width:100%;
+	font-family:'Comfortaa-Regular', Arial, sans-serif;
+}
+/*Personalisation de la police de page  */
+ h3 {
+	font-size:1em;
+	font-weight: normal;
+}
+#article{
+		font-size: 0.7em;
+		font-style: italic;
+}
+
+ h1 {
+	font-size: 1.8em;
+	letter-spacing: 1px;
+	font-weight: normal;;
+}
+span#kaouech{
+	color:#feca07;
+	font-weight: bold;
+}
+span#deve{
+	text-decoration: underline #feca07;
+
+}
+h3 {
+	
+	text-align: center !important;
+	font-size: 1.1em !important;
+	background: #feca07;
+	padding: 5px 0px;
+	border-bottom:2px solid black;
+	border-top: 2px solid #b3a856;
+	color: white;
+}
+h4{
+	font-size: 1em;
+	margin:6px 0px 5px;
+	color: #1f00b3;
+
+}
+h5{
+	font-size: 0.9em
+	font-weight:normal;
+	font-style: italic;
+	text-indent: 1em;
+	margin:0px 0px 2px;
+}
+p{
+	font-size: 0.8em;
+}
+hr{
+	display: none;
+}
+
+/*------------------------------------------------------*/
+main {
+	display: flex;
+	flex-direction: column;
+}
+aside:first-of-type{
+	order:2;
+}
+/*Personalisation de la section contact*/
+aside:nth-of-type(2){
+	order:3;
+}
+aside h2{
+	display:none;
+}
+address p{
+	font-style: normal;
+	text-transform: uppercase;
+}
+a{
+	text-decoration:none;
+	color:black;
+	font-style: italic;
+}
+address{
+	line-height: 25px;
+	color:#feca07;
+	letter-spacing: 2px;
+	font-size: 0.8em;
+	padding-left:10px;
+}
+.supprimer{
+	display:none;
+}
+address div p{
+	display:inline;
+	margin-right:5px;
+}
+/*Personalisation de la section à propos de moi*/
+aside:nth-of-type(3){
+	order:4;
+	margin:10px;
+	padding: 5px 0px 5px 5px;
+	-webkit-box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
+	text-indent:1.5em;
+
+}
+/*Suppression de la section Loisirs*/
+aside:nth-of-type(4){
+	display: none;
+}
+/*Personalisation de la section 'kaouech Mouheb'*/
+aside:nth-of-type(5){
+	order:1;
+	text-align: center;
+}
+
+/*Personalisation de la section formation*/
+aside:nth-of-type(6){
+	order:5;
+	padding: 10px;
+}
+.logos{
+	display:none;
+}
+
+.point{
+	display: none;
+}
+
+/*Personalisation de la section expérience professionnelle*/
+
+aside:nth-of-type(7){
+	order:6;
+	padding:10px;
+}
+/*Personalisation de la section recommandation*/
+aside:nth-of-type(8){
+	order:7;
+	background:#a09438;
+}
+.items3{
+	display: flex;
+	margin: 10px;
+	color: white;
+}
+}
+/*________________________________________________________________________________________________________________*/
+
+@media (min-width: 681px) and (max-width: 1024px){
+
+body{
+	font-family:'Comfortaa-Regular', Arial, sans-serif;
+}
+
+ h1 {
+	font-size: 1.9em;
+	letter-spacing: 17px;
+	margin-top: 25px;
+
+}
+h2{
+	font-size: 1.1em;
+	padding-left: 10px;
+	color:#a09438;
+
+}
+h3{
+	font-size: 1.5em;
+	text-align: center;
+	color: #1f00b3;
+}
+span#kaouech{
+	color:#feca07;
+	font-weight: bold;
+}
+span#deve{
+	text-decoration: underline #feca07;
+
+}
+hr{
+	border:1px solid #feca07 ;
+	width: 100%;
+}
+img.logos{
+	padding-top: 0px;
+	width:35px;
+	margin-right: 10px;
+}
+.point{
+	padding:5px 0px;
+	display: flex;
+	font-size: 1.1em;
+}
+.point p{
+	font-weight: bold;
+	color: #afa244;
+}
+.pointLogo{
+	margin-right: 10px;
+}
+h4{
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+main{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:;
+}
+h5{
+	text-indent: 1.2em;
+	font-size: 1em;
+	color: #1f00b3;
+}
+
+
+aside:first-of-type{
+	
+	order:3;
+	width: 25%;
+	margin-right: 5%;
+	padding-top: 10px;
+
+}
+.photoProfil{
+	float:right;
+	border-radius: 50%;
+	border:5px solid #bcadff;
+}
+aside:nth-of-type(5){
+	order:1;
+	padding-left: 5px;
+
+}
+aside:nth-of-type(2){
+	order:2;
+	margin: 20px 0px;
+	width: 70%;
+}
+/*Personalisation de la section à propos de moi*/
+aside:nth-of-type(3){
+	order:4;
+}
+#article{
+	text-indent: 1.7em;
+	padding: 10px;
+}
+address p{
+	font-style: normal;
+	text-transform: uppercase;
+}
+a{
+	text-decoration:none;
+	color:black;
+	font-style: italic;
+}
+address{
+	line-height: 25px;
+	color:#feca07;
+	letter-spacing: 2px;
+	font-size: 0.8em;
+	padding-left:10px;
+}
+/*Personalisation de la section loisir*/
+aside:nth-of-type(4){
+	order:8;
+	width: 100%;
+	background:#a09438;
+	margin-top: -1px;
+}
+.container4 h2{
+	display: none;
+}
+img#loisir{
+	
+	margin:5px 30%;
+}
+
+/*Personalisation de la section formation*/
+aside:nth-of-type(6){
+	order:5;
+	padding: 10px;
+}
+
+/*Personalisation de la section expérience professionnelle*/
+
+aside:nth-of-type(7){
+	order:6;
+	padding:10px;
+}
+/*Personalisation de la section recommandation*/
+aside:nth-of-type(8){
+	order:7;
+	width: 100%;
+}
+.items3{
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	background:#a09438;
+	padding: 10px;
+	margin-top:5px;
+}
+}
+/*________________________________________________________________________________________________*/
+@media (min-width: 1025px){
+
+body{
+	font-family:'Louis George Cafe', Arial, sans-serif;
+}
+h1 {
+	font-size: 3.1em;
+	font-family: 'Roboto-Light', Arial, sans-serif;
+	margin: 118px 0px 24px 0px;
+	font-weight: normal;
+}
+h2{ /*Personalisation des titres de niveau h2, contact, a propos de moi, loisir*/
+	text-align: center;
+	background: #404040;
+	color:#feca07;
+	font-size: 1.3em;
+ 	padding:15px 0px 11px 0px;
+}
+p{
+	font-size: 1.1em;
+}
+h5{
+	font-size: 1.1em;
+	margin-bottom: 16px;
+}
+h4{
+	font-size: 1.2em;
+	margin-bottom: 16px;
+}
+span#kaouech{
+	color:#feca07;
+	font-weight: bold;
+}
+span#deve{
+	text-decoration: underline #feca07;
+}
+.developpeur{
+	font-size:2.1em;
+}
+
+hr{
+	border:1px solid #feca07 ;
+	line-height: 23px;
+}
+main{
+	display: flex;
+	flex-wrap: wrap;
+}
+img.photoProfil
+{
+	border:4px solid #daaf12;
+	border-radius:50%;
+	margin:64px 79px 39px 79px;
+	width:56%;
+}
+aside:first-of-type{
+	width: 334px;
+	background:#feca07;
+	margin-right: 45px;
+}
+/*Personalisation de la section contact*/
+aside:nth-of-type(2){
+	order:3;
+	width: 334px;
+	background:#feca07;
+	margin-right: 45px;
+}
+address {
+	font-style: normal;
+	font-weight: bold;
+	padding:35px 0px 51px 47px;
+}
+address p{
+	font-size: 1.1em;
+}
+address a{
+	font-size: 1em;
+}
+address div{   /*augmenter l'espace entre, adresse, téléphone et mail.*/
+	margin-bottom:22px;
+	line-height: 22px;
+}
+a {
+	text-decoration: none;
+	color:black;
+	margin-top: 10px;
+}
+/*Personalisation de la section a propos de moi*/
+aside:nth-of-type(3){
+	order:5;
+	width: 334px;
+	background:#feca07;
+	margin-right: 45px;
+	height: 732px;
+}
+#article{
+	padding:36px 47px 0px 47px;
+	word-spacing: 13px;
+	line-height: 22px;
+	height: 347px;
+}
+/*Personalisation de photo loisir*/
+aside:nth-of-type(4){
+	order:7;
+	width: 334px;
+	background:#feca07;
+	margin-right: 45px;
+}
+img#loisir{
+	margin:29px;
+}
+aside:nth-of-type(5){
+	order:2;
+	width: 644px;
+}
+/*Personalisation de la section formation*/
+aside:nth-of-type(6){
+	order:4;
+	width: 644px;
+}
+h3{
+	margin:27px 0px 23px 0px;
+	font-size:1.3em;
+	font-weight: bold;
+}
+.logos{ /*Personalisation du logo formation*/
+	margin:-5px 36px -14px 0px;
+}
+.items1, .items2{
+	display:flex;
+	flex-wrap: wrap;
+	margin-top: 45px; 	
+}
+/*Personalisation des paragraphe dans la section formation..*/
+.items1 div:first-of-type{
+	width: 117px;
+	margin-right: 76px;
+}
+.items1 div:nth-of-type(2){
+	order:2;
+	width: 451px;
+}
+.items1 div:nth-of-type(3){
+	order:3;
+	width: 117px;
+	margin-right: 76px;
+	margin-top: 45px;
+}
+.items1 div:last-of-type{
+	order:4;
+	width: 451px;
+	margin-top: 45px;
+}
+/*______________________________________*/
+.items2 div:first-of-type{
+	width:167px;
+	margin-right:26px;
+}
+.items2 div:nth-of-type(2){
+	width:451px;
+}
+.items2 div:nth-of-type(3){
+	width:167px;
+	margin-right:26px;
+	margin-top: 45px;
+}
+.items2 div:nth-of-type(4){
+	width:451px;
+	margin-top: 45px;
+}
+.items2 div:nth-of-type(5){
+	width:167px;
+	margin-right:26px;
+	margin-top: 45px;
+}
+.items2 div:last-of-type{
+	width:451px;
+	margin-top: 45px;
+}
+div.point{      /*items de type container contient lui aussi deux items'logos de point et date'*/
+	display: flex;	
+}
+.image{ /*la class image regroupe les logos de point */
+	margin-right:13px;
+}
+/*Personalisation de la section expérience professionnelle*/
+aside:nth-of-type(7){
+	order:6;
+	width: 644px;
+}
+aside:nth-of-type(8){
+	order:8;
+	width: 644px;
+	margin-top: -40px;
+}
+.items3{
+	display:flex;
+	flex-wrap: wrap;
+	margin-top: 35px;
+}
+.items3 div:first-of-type{
+	width: 223px;
+	margin-right: 122px;
+}
+.items3 div:nth-of-type(2){
+	width: 243px;
+	margin-right: 54px;
+}
+}
+/*__________________________________________________________________*/
+@media (min-width: 1144px){
+
+
+aside:first-of-type{
+	width: 384px;
+	margin-right: 65px;
+}
+/*Personalisation de la section contact*/
+aside:nth-of-type(2){
+	width: 384px;
+	margin-right: 65px;
+}
+/*Personalisation de la section a propos de moi*/
+aside:nth-of-type(3){
+	width: 384px;
+	margin-right: 65px;
+}
+/*Personalisation de photo loisir*/
+aside:nth-of-type(4){
+	width: 384px;
+	margin-right: 65px;
+}
+img#loisir{
+	margin:30px 62px 38px 62px;
+}
+aside:nth-of-type(5){
+	width: 693px;
+}
+/*Personalisation de la section formation*/
+aside:nth-of-type(6){
+	width: 693px;
+}
+/*Personalisation des paragraphe dans la section formation..*/
+
+.items1 div:first-of-type{
+	margin-right: 125px;
+}	
+.items1 div:nth-of-type(2){
+	width: 451px;
+}
+.items1 div:nth-of-type(3){
+	margin-right: 125px;
+}
+.items1 div:last-of-type{
+	width: 451px;
+}
+/*______________________________________*/
+.items2 div:first-of-type{
+	width: 214px;
+	margin-right:28px;
+}
+.items2 div:nth-of-type(2){
+	width:443px;
+}
+.items2 div:nth-of-type(3){
+	width:214px;
+	margin-right:28px;
+}
+.items2 div:nth-of-type(4){
+	width:443px;
+}
+.items2 div:nth-of-type(5){
+	width:214px;
+	margin-right:28px;
+}
+.items2 div:last-of-type{
+	width:443px;
+}
+/*Personalisation de la section expérience professionnelle*/
+aside:nth-of-type(7){
+	width: 693px;
+}
+aside:nth-of-type(8){
+	width: 693px;
+}
+.items3 div:first-of-type{
+	margin-right: 107px;
+}
+.items3 div:nth-of-type(2){
+	margin-right: 69px;
+}	
+}
+
+
+
