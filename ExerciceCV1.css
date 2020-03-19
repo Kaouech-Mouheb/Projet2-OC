@@ -100,7 +100,7 @@ img {
   	border-style: none;
   	box-sizing: content-box;
 }
-/*Application des médias queries pour un écran small-xs*/
+/*Application des médias queries pour un écran de téléphone*/
 @media (max-width: 680px){
 
 /*Personalisation de la photo de condidat*/
@@ -259,8 +259,11 @@ aside:nth-of-type(8){
 	margin: 10px;
 	color: white;
 }
+#print{
+	display: none;
 }
-/*________________________________________________________________________________________________________________*/
+}
+/*____________Pour un écran de tablette cela varie entre les modéles ____________________________________________________________________________________________________*/
 
 @media (min-width: 681px) and (max-width: 1024px){
 
@@ -417,8 +420,11 @@ aside:nth-of-type(8){
 	padding: 10px;
 	margin-top:5px;
 }
+#print{
+	display: none;
 }
-/*________________________________________________________________________________________________*/
+}
+/*__Pour les ordinateurs ______________________________________________________________________________________________*/
 @media (min-width: 1025px){
 
 body{
@@ -627,8 +633,11 @@ aside:nth-of-type(8){
 	width: 243px;
 	margin-right: 54px;
 }
+#print{
+	display: none;
 }
-/*__________________________________________________________________*/
+}
+/*________________Pour les ordinateur avec un écran plus large__________________________________________________*/
 @media (min-width: 1144px){
 
 
@@ -709,8 +718,28 @@ aside:nth-of-type(8){
 }
 .items3 div:nth-of-type(2){
 	margin-right: 69px;
+}
+#print{
+	display: none;
 }	
 }
-
+@media(min-width: 1590px){/*Pour les grandes écrans Tv..*/
+	body{
+		max-width: 1590px;
+	}
+	#print{
+	display: none;
+}
+}
+/*Affiche seulement le cv en format png qui se trouve a l'intérieur de la balise body*/
+@media print{
+	
+	main{
+		display: none;
+	}
+	#print{
+	display: block;
+}
+}
 
 
