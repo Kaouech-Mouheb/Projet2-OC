@@ -158,7 +158,7 @@ h4{
 
 }
 h5{
-	font-size: 0.9em
+	font-size: 0.9em;
 	font-weight:normal;
 	font-style: italic;
 	text-indent: 1em;
@@ -324,7 +324,6 @@ h4{
 main{
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction:;
 }
 h5{
 	text-indent: 1.2em;
