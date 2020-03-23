@@ -269,6 +269,7 @@ aside:nth-of-type(8){
 
 body{
 	font-family:'Comfortaa-Regular', Arial, sans-serif;
+	background-image: url('Image/arrierePlan1.jpg');
 }
 
  h1 {
@@ -289,15 +290,15 @@ h3{
 	color: #1f00b3;
 }
 span#kaouech{
-	color:#feca07;
+	color:#fff06b;
 	font-weight: bold;
 }
 span#deve{
-	text-decoration: underline #feca07;
+	text-decoration: underline #fff06b;
 
 }
 hr{
-	border:1px solid #feca07 ;
+	border:2px solid #fff06b ;
 	width: 100%;
 }
 img.logos{
@@ -374,17 +375,14 @@ a{
 }
 address{
 	line-height: 25px;
-	color:#feca07;
+	color:#fff06b;
 	letter-spacing: 2px;
 	font-size: 0.8em;
 	padding-left:10px;
 }
 /*Personalisation de la section loisir*/
 aside:nth-of-type(4){
-	order:8;
-	width: 100%;
-	background:#a09438;
-	margin-top: -1px;
+	display: none;
 }
 .container4 h2{
 	display: none;
@@ -410,18 +408,21 @@ aside:nth-of-type(7){
 aside:nth-of-type(8){
 	order:7;
 	width: 100%;
+	padding: 10px;
 }
 .items3{
 	display: flex;
-	color: white;
 	justify-content: space-between;
-	background:#a09438;
-	padding: 10px;
 	margin-top:5px;
 }
 #print{
 	display: none;
 }
+}
+i{ /*Personalisation du logo formation*/
+	margin-right:25px;
+	font-size: 1.5em;
+	color:#1f00b3;
 }
 /*__Pour les ordinateurs ______________________________________________________________________________________________*/
 @media (min-width: 1025px){
@@ -437,8 +438,8 @@ h1 {
 }
 h2{ /*Personalisation des titres de niveau h2, contact, a propos de moi, loisir*/
 	text-align: center;
-	background: #404040;
-	color:#feca07;
+	background: #807c5c;
+	color:#fff06b;
 	font-size: 1.3em;
  	padding:15px 0px 11px 0px;
 }
@@ -454,18 +455,18 @@ h4{
 	margin-bottom: 16px;
 }
 span#kaouech{
-	color:#feca07;
+	color:#fff06b;
 	font-weight: bold;
 }
 span#deve{
-	text-decoration: underline #feca07;
+	text-decoration: underline #fff06b;
 }
 .developpeur{
 	font-size:2.1em;
 }
 
 hr{
-	border:1px solid #feca07 ;
+	border:1px solid #fff06b ;
 	line-height: 23px;
 }
 main{
@@ -481,14 +482,14 @@ img.photoProfil
 }
 aside:first-of-type{
 	width: 334px;
-	background:#feca07;
+	background:#fff06b;
 	margin-right: 45px;
 }
 /*Personalisation de la section contact*/
 aside:nth-of-type(2){
 	order:3;
 	width: 334px;
-	background:#feca07;
+	background:#fff06b;
 	margin-right: 45px;
 }
 address {
@@ -515,7 +516,7 @@ a {
 aside:nth-of-type(3){
 	order:5;
 	width: 334px;
-	background:#feca07;
+	background:#fff06b;
 	margin-right: 45px;
 	height: 732px;
 }
@@ -529,7 +530,7 @@ aside:nth-of-type(3){
 aside:nth-of-type(4){
 	order:7;
 	width: 334px;
-	background:#feca07;
+	background:#fff06b;
 	margin-right: 45px;
 }
 img#loisir{
@@ -549,8 +550,10 @@ h3{
 	font-size:1.3em;
 	font-weight: bold;
 }
-.logos{ /*Personalisation du logo formation*/
-	margin:-5px 36px -14px 0px;
+i{ /*Personalisation du logo formation*/
+	margin-right:25px;
+	font-size: 1.5em;
+	color:#fff06b;
 }
 .items1, .items2{
 	display:flex;
