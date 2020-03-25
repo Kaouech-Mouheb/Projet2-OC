@@ -431,9 +431,10 @@ body{
 	font-family:'Louis George Cafe', Arial, sans-serif;
 }
 h1 {
-	font-size: 3.1em;
+	
 	font-family: 'Roboto-Light', Arial, sans-serif;
 	margin: 118px 0px 24px 0px;
+	font-size: 3.1em;
 	font-weight: normal;
 }
 h2{ /*Personalisation des titres de niveau h2, contact, a propos de moi, loisir*/

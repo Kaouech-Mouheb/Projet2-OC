@@ -74,9 +74,8 @@
   }@font-face{
       font-family:'Roboto-Light';
       src: url('Police/Roboto-Light.ttf');
-  }  
-    /*Pour écran de téléphone "max-width 640px"*/
-   @media (max-width:960px){ 
+  }  /*écran de téléphone*/
+   @media all and (max-width:960px){
     h2{
         font-size: 1.2em;
     } p{
@@ -112,20 +111,19 @@
     }/*Personalisation de la section loisirs*/
     aside section:last-of-type{
         display:none;
-    }
     /*Personalisation du l'en-tête*/
-    header h1{          /*Titre Principal*/
+    }header h1{          /*Titre Principal*/
         font-size: 1.8em;
         letter-spacing: 1px;
         font-weight: normal;
         font-family:'Comfortaa-Regular', Arial, sans-serif;
         text-align:center;
-        margin:10px 0px;   
+        margin:10px 0px;
     }header img{         /*Photo de profil*/
         border-radius: 50%;
         border:solid 1px #feca07;
-        width:40%; /*40% = 150px sur un écran de 375px */
-        margin:10px 30% 0px;/*30% pour avoir une image placé au centre'100% small screen - 40% image =60%/2 pour avoir 30% de marge sur chaque coté'=  */
+        width:30%; 
+        margin:10px 35% 0px;
     }header P{  /*Sous titre*/
         text-align: center;
         margin-bottom:10px;
@@ -157,7 +155,7 @@
         margin-bottom: 10px;
     }aside section:first-of-type address p{
         margin:10px 0px 1px 0px;
-    }aside section:first-of-type address a{
+    }address a{
         text-decoration:none;
         color:black;
         font-size: 0.7em;
@@ -172,7 +170,7 @@
 	    -moz-box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
 	    box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
     }/*Personalisation de la section recommandation*/
-    main section:last-of-type .recommandation{
+    main section:last-of-type .formation{
         display: flex;
         padding:5px 2px 10px 2px;
         background: #a09438;
@@ -180,33 +178,52 @@
         justify-content: space-between;
     }
 }  
-    /*Pour écran de tablette max-width 960px*/    
-@media (min-width:641px) and (max-width:960px){ 
+    /*Pour écran de tablette*/    
+@media all and (min-width:640px) and (max-width:960px){ 
     body{
-        background-image: url('Image/arrierePlan1.jpg')
-    }
-    header{
+        background-image: url('Image/arrierePlan1.jpg');
+        padding: 10px;
+    }p{
+        font-size:1.2em;
+    }h2{
+        font-size: 1.5em;
+        margin:20px 0px 20px 0px;
+        text-align: center;
+    }h3{
+        font-size:1.8em;
+    }h4{
+        font-size: 1.4em;
+    }h5{
+        font-size: 1.3em;
+    }header{
         display: flex;
         flex-direction: column;
     }header h1{
         order:1;
         text-align:left;
-        width: 50%;
+        font-size: 2.2em;
+        margin-top: 20px;
     }header img{
         order:3;
         float: right;
-        margin: -30px 10px 0px 0px;
-        width: 150px;
+        margin: -50px 0px 0px 0px;
+        width: 200px;
     }header p{
         order:2;
         text-align: left;
-    }
-    address{
-        margin-top:-120px;
+        font-size: 1.3em;
+    }address{
+        margin-top:-140px;
+    }article p{
+        font-size: 1.2em;
+    }address a{
+        font-size: 1.1em;
+    }main section:last-of-type .formation{
+        padding: 10px 10px 30px 10px;
     }
 }
 /*Pour écran d'ordinateur max-width 1200px*/
-@media (min-width:961px){
+@media all and (min-width:961px){
    /*Personalisation de l'en-tête*/
     header{
         display: flex;
@@ -226,10 +243,10 @@
         color:#fff06b;
         text-decoration: underline #fff06b;
     }h1 {
-        font-size: 2.2em;
+        margin: 118px 0px 24px 0px;
+	    font-size: 3.1em;
         font-family: 'Roboto-Light', Arial, sans-serif;
         font-weight: normal;
-        margin: 78px 0px 24px 0px;
     }header p{
         font-size:1.5em;
     }
@@ -248,10 +265,19 @@
     }h5{
         font-size: 1.1em;
         margin-bottom: 16px;
+    }h3{
+        text-align: center;
+        margin:27px 0px 23px 0px;
+        font-size:1.3em;
+        font-weight: bold;
     }h4{
         font-size: 1.2em;
         margin-bottom: 16px;
-    } hr{
+    }i{ /*Personalisation des icones*/
+        margin-right:25px;
+        font-size: 1.5em;
+        color:#fff06b;
+    }hr{
         border:1px solid #fff06b ;
         line-height: 23px;
     }.container{
@@ -271,7 +297,7 @@
     }address p{
         margin: 22px 0px 10px 0px;
     }
-    aside section:nth-of-type(2){
+    aside section:nth-of-type(2){ /*section loisirs*/
         width: 314px;
         background: #fff06b;
         margin-right: 45px;
@@ -279,20 +305,84 @@
         width: 314px;
         background: #fff06b;
         margin-right: 45px;
-        height: 732px;
+        height: 832px;
     }article p{
         padding:36px 47px 0px 47px;
         word-spacing: 13px;
         line-height: 22px;
-    }#loisir{
+    }#loisir{ /*Loisirs image*/
         width:240px;
         margin:10px 37px;
+    }.formation{ /*Personalisation de la section Formation, expérience professionnelle et recommandation*/
+        width:592px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }.date{ /*section date, ville*/
+        width: 117px;
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+    }.iconePoint2{/*icones point section formation*/
+        margin-right: 10px;
+    }.ecole{/*section ecole, entreprise*/
+        width:389px;
+        margin-top: 45px;
+    }.recommandation{
+        padding:35px 10px 0px 0px;
+    }
+}       /*les écrans de grande taille max width 1600px*/
+@media all and (min-width:1140px){
+    header .img{
+    width:384px;
+    margin-right: 65px;
+    }header img{
+    margin:64px 79px 39px 79px;
+    width:224px;
+    }aside section:first-of-type{  /*Section contact*/
+    width:384px;
+    margin-right: 65px;
+    }aside article{     /*Section a propos de moi*/
+    width:384px;
+    margin-right: 65px;
+    height: 782px;
+    }aside section:nth-of-type(2){/*section loisirs*/
+    width:384px;
+    margin-right: 65px;
+    }#loisir{ /*Loisirs image*/
+    margin:30px 62px 38px 62px;
+    width:260px;
+    }.formation{ /*Personalisation de la section Formation, expérience professionnelle et recommandation*/
+    width:693px;
+    }.date{ /*section date, ville*/
+        width: 214px;
+        justify-content: normal;
+    }.iconePoint1, .iconePoint2{/*icones point section expérience professionnelle*/
+        margin-right: 20px;
+    }
+}   /*les écrans de tv ou projection supèrieur 1600px*/
+@media only screen and (min-device-width:1600px){
+    body{   
+        width:1599px;
+        margin: 10% 15%;
     }
 }
-
-
-
-/*
-@media (max-width: 960px)
-@media (max-width: 1200px)
-@media (max-width: 1600px)
+@media print{
+    body {
+        width: auto!important;
+        margin: auto!important;
+        font-family: serif;
+        font-size: 13pt;
+        background-color: #fff!important;
+        color: #000!important;
+        background-image: none!important;
+      }img{
+          display: none;
+      }h3, p{
+        color: #000!important;
+      }main section:last-of-type .formation{
+        background-color: #fff!important;
+      }article p{
+          box-shadow: none;
+      } 
+}
