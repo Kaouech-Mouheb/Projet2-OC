@@ -176,6 +176,8 @@
         background: #a09438;
         color:white;
         justify-content: space-between;
+    }.imprimer{
+        display: none;
     }
 }  
     /*Pour écran de tablette*/    
@@ -220,6 +222,8 @@
         font-size: 1.1em;
     }main section:last-of-type .formation{
         padding: 10px 10px 30px 10px;
+    }.imprimer{
+        display: none;
     }
 }
 /*Pour écran d'ordinateur max-width 1200px*/
@@ -329,6 +333,8 @@
         margin-top: 45px;
     }.recommandation{
         padding:35px 10px 0px 0px;
+    }.imprimer{
+        display: none;
     }
 }       /*les écrans de grande taille max width 1600px*/
 @media all and (min-width:1140px){
@@ -358,30 +364,23 @@
         justify-content: normal;
     }.iconePoint1, .iconePoint2{/*icones point section expérience professionnelle*/
         margin-right: 20px;
+    }.imprimer{
+        display: none;
     }
 }   /*les écrans de tv ou projection supèrieur 1600px*/
 @media only screen and (min-device-width:1600px){
     body{   
         width:1599px;
         margin: 10% 15%;
+    }.imprimer{
+        display: none;
     }
 }
-@media print{
-    body {
-        width: auto!important;
-        margin: auto!important;
-        font-family: serif;
-        font-size: 13pt;
-        background-color: #fff!important;
-        color: #000!important;
-        background-image: none!important;
-      }img{
-          display: none;
-      }h3, p{
-        color: #000!important;
-      }main section:last-of-type .formation{
-        background-color: #fff!important;
-      }article p{
-          box-shadow: none;
-      } 
+@media print{ 
+    .imprimer{
+         display: block;
+     }header, main, aside{
+         display: none;
+     }
+
 }
