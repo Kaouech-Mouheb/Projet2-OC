@@ -270,6 +270,7 @@
     body{
         font-family:'Louis George Cafe', Arial, sans-serif;
         margin:0px 5px;
+        border:2px solid black;
     }h2{
         text-align: center;
         background: #807c5c;
@@ -347,6 +348,10 @@
     }
 }       /*les écrans de grande taille max width 1600px*/
 @media all and (min-width:1140px){
+    body{
+        border:2px solid black;
+        max-width: 1200px;
+    }
     header .img{
     width:384px;
     margin-right: 65px;
@@ -370,10 +375,16 @@
         justify-content: normal;
     }.iconePoint1, .iconePoint2{/*icones point section expérience professionnelle*/
         margin-right: 20px;
-    } span i{font-size: 3.6em;
+    }span i{font-size: 2.5em;
         color: black;
-        margin:8%;
-    }.imprimer{
+        border: solid 3px #201f1f;
+        border-radius: 50%;
+        padding:10px;
+    }span {
+        width: 60px;
+        height: 60px;
+    }
+    .imprimer{
         display: none;
     }
 }   /*les écrans de tv ou projection supèrieur 1600px*/
