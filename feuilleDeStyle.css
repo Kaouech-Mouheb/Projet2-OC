@@ -106,14 +106,17 @@
     /*Les elements a ne pas afficher sur téléphone*/
     .supprimer{/*supprimer quelques informations du contact*/
         display: none;  
-    }.iconePoint{
+    }.iconePoint1, .iconePoint2{
         display: none;
     }/*Personalisation de la section loisirs*/
     aside section:last-of-type{
         display:none;
     /*Personalisation du l'en-tête*/
+    }header{
+        display: flex;
+        flex-direction: column-reverse;
     }header h1{          /*Titre Principal*/
-        font-size: 1.8em;
+        font-size: 1.5em;
         letter-spacing: 1px;
         font-weight: normal;
         font-family:'Comfortaa-Regular', Arial, sans-serif;
@@ -150,11 +153,14 @@
     }/*contact*/
     aside section:first-of-type h2{ 
         display: none;
-    }aside section:first-of-type address{
+    }address{
         font-style: normal;
         margin-bottom: 10px;
-    }aside section:first-of-type address p{
+        text-align: center;
+        letter-spacing:0.2em;
+    }address p{
         margin:10px 0px 1px 0px;
+        color: #feca07;
     }address a{
         text-decoration:none;
         color:black;
@@ -162,8 +168,9 @@
     } /*Personalisation de la section à propos de moi*/
     article p{
         text-indent: 1.5em;
-        letter-spacing: 0.1em;
+        word-spacing: 0.2em;
         font-size: 0.8em;
+        font-style: italic;
         padding: 5px;
         margin-top:5px;
         -webkit-box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.75);
@@ -216,6 +223,7 @@
         font-size: 1.3em;
     }address{
         margin-top:-140px;
+        text-align: left;
     }article p{
         font-size: 1.2em;
     }address a{
@@ -229,7 +237,11 @@
 /*Pour écran d'ordinateur max-width 1200px*/
 @media all and (min-width:961px){
    /*Personalisation de l'en-tête*/
-    header{
+   span i{font-size: 3em;
+       color: black;
+       margin:7%;
+   }
+   header{
         display: flex;
         flex-wrap: wrap;
     }header .img{
@@ -313,9 +325,6 @@
         padding:36px 47px 0px 47px;
         word-spacing: 13px;
         line-height: 22px;
-    }#loisir{ /*Loisirs image*/
-        width:240px;
-        margin:10px 37px;
     }.formation{ /*Personalisation de la section Formation, expérience professionnelle et recommandation*/
         width:592px;
         display: flex;
@@ -330,7 +339,7 @@
         margin-right: 10px;
     }.ecole{/*section ecole, entreprise*/
         width:389px;
-        margin-top: 45px;
+        margin-top: 40px;
     }.recommandation{
         padding:35px 10px 0px 0px;
     }.imprimer{
@@ -354,9 +363,6 @@
     }aside section:nth-of-type(2){/*section loisirs*/
     width:384px;
     margin-right: 65px;
-    }#loisir{ /*Loisirs image*/
-    margin:30px 62px 38px 62px;
-    width:260px;
     }.formation{ /*Personalisation de la section Formation, expérience professionnelle et recommandation*/
     width:693px;
     }.date{ /*section date, ville*/
@@ -364,6 +370,9 @@
         justify-content: normal;
     }.iconePoint1, .iconePoint2{/*icones point section expérience professionnelle*/
         margin-right: 20px;
+    } span i{font-size: 3.6em;
+        color: black;
+        margin:8%;
     }.imprimer{
         display: none;
     }
