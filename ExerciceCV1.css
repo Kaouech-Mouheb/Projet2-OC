@@ -113,7 +113,7 @@ img {
 
 
 body{
-	background-image: url('Image/arrierePlan.jpg');
+	background-image: url('image/arrierePlan.jpg');
 	background-repeat: no-repeat;
 	width:100%;
 	font-family:'Comfortaa-Regular', Arial, sans-serif;
@@ -269,7 +269,7 @@ aside:nth-of-type(8){
 
 body{
 	font-family:'Comfortaa-Regular', Arial, sans-serif;
-	background-image: url('Image/arrierePlan1.jpg');
+	background-image: url('image/arrierePlan1.jpg');
 }
 
  h1 {
