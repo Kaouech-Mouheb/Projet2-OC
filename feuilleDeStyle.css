@@ -166,7 +166,7 @@
         color:black;
         font-size: 0.7em;
     } /*Personalisation de la section à propos de moi*/
-    article p{
+    .aPropos p{
         text-indent: 1.5em;
         word-spacing: 0.2em;
         font-size: 0.8em;
@@ -224,7 +224,7 @@
     }address{
         margin-top:-140px;
         text-align: left;
-    }article p{
+    }.aPropos p{
         font-size: 1.2em;
     }address a{
         font-size: 1.1em;
@@ -270,7 +270,7 @@
     body{
         font-family:'Louis George Cafe', Arial, sans-serif;
         margin:0px 5px;
-        border:2px solid black;
+        border:2px solid rgb(116, 113, 113);
     }h2{
         text-align: center;
         background: #807c5c;
@@ -313,16 +313,16 @@
     }address p{
         margin: 22px 0px 10px 0px;
     }
-    aside section:nth-of-type(2){ /*section loisirs*/
+    aside section:nth-of-type(3){ /*section loisirs*/
         width: 314px;
         background: #fff06b;
         margin-right: 45px;
-    }aside article{     /*Section a propos de moi*/
+    }.aPropos{     /*Section a propos de moi*/
         width: 314px;
         background: #fff06b;
         margin-right: 45px;
         height: 832px;
-    }article p{
+    }.aPropos p{
         padding:36px 47px 0px 47px;
         word-spacing: 13px;
         line-height: 22px;
@@ -349,7 +349,7 @@
 }       /*les écrans de grande taille max width 1600px*/
 @media all and (min-width:1140px){
     body{
-        border:2px solid black;
+        border:2px solid rgb(116, 113, 113);
         max-width: 1200px;
     }
     header .img{
@@ -361,11 +361,11 @@
     }aside section:first-of-type{  /*Section contact*/
     width:384px;
     margin-right: 65px;
-    }aside article{     /*Section a propos de moi*/
+    }aside .aPropos{     /*Section a propos de moi*/
     width:384px;
     margin-right: 65px;
     height: 782px;
-    }aside section:nth-of-type(2){/*section loisirs*/
+    }aside section:nth-of-type(3){/*section loisirs*/
     width:384px;
     margin-right: 65px;
     }.formation{ /*Personalisation de la section Formation, expérience professionnelle et recommandation*/
