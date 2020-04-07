@@ -269,8 +269,8 @@
     /*Personalisation du corps*/
     body{
         font-family:'Louis George Cafe', Arial, sans-serif;
-        margin:0px 5px;
-        border:2px solid rgb(116, 113, 113);
+        margin:0px auto;
+       
     }h2{
         text-align: center;
         background: #807c5c;
@@ -349,7 +349,7 @@
 }       /*les écrans de grande taille max width 1600px*/
 @media all and (min-width:1140px){
     body{
-        border:2px solid rgb(116, 113, 113);
+        
         max-width: 1200px;
     }
     header .img{
